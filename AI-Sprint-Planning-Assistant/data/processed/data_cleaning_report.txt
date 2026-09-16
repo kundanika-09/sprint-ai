@@ -1,0 +1,34 @@
+DATA CLEANING REPORT
+====================
+
+Dataset: Mesos Stories 176.csv
+
+ORIGINAL DATASET
+----------------
+Rows: 176
+Columns: 22
+Exact duplicate rows: 0
+
+MISSING VALUES BEFORE CLEANING
+------------------------------
+description: 41
+storyPoint: 18
+assignee: 24
+
+CLEANING PERFORMED
+------------------
+- Trimmed whitespace from text fields.
+- Standardized text fields by removing surrounding spaces.
+- Converted storyPoint to numeric values.
+- Exact duplicate rows were removed.
+- Missing storyPoint values were NOT replaced with 0.
+- Missing storyPoint values are retained for ML-team handling.
+
+FINAL DATASET
+-------------
+Rows: 176
+Columns: 22
+
+MISSING VALUES AFTER CLEANING
+-----------------------------
+storyPoint: 18

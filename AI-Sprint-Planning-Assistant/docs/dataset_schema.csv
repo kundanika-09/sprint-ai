@@ -1,0 +1,23 @@
+Column,Description,Data Type,Missing Values,Project Relevance
+key,Unique issue or story identifier,String,0,Story identification
+issueType,Type of issue or story,Categorical,0,Story classification
+sprint,Sprint associated with the issue,String,0,Sprint analysis
+status,Current status of the issue,Categorical,0,Sprint progress analysis
+summary,Short description of the issue,Text,0,Story point prediction
+description,Detailed description of the issue,Text,41,Story point prediction
+storyPoint,Story point assigned to the issue,Numeric,18,Target for story point prediction
+priority,Priority assigned to the issue,Categorical,0,Planning and recommendation
+watchcount,Number of watchers,Numeric,0,Issue activity analysis
+fixVersions,Fix version information,String,0,Issue analysis
+affectedVersions,Affected version information,String,0,Issue analysis
+assignee,Person assigned to the issue,String,24,Workload analysis
+creator,Person who created the issue,String,0,Issue metadata
+reporter,Person who reported the issue,String,0,Issue metadata
+commentCount,Number of comments,Numeric,0,Issue activity analysis
+votes,Number of votes,Numeric,0,Issue activity analysis
+issueLinks,Links to related issues,String,0,Relationship analysis
+blockedBy,Issues blocking this issue,String,0,Risk analysis
+blocks,Issues blocked by this issue,String,0,Risk analysis
+dependedOnBy,Issues depending on this issue,String,0,Dependency analysis
+dependedOn,Issues this issue depends on,String,0,Dependency analysis
+subtasks,Subtask information,String,0,Workload analysis
