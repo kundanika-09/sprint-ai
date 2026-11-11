@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block title %}Analytics{% endblock %}{% block heading %}Sprint Analytics{% endblock %}
+{% block content %}
+<div class="row g-3">
+ <div class="col-lg-6"><div class="panel"><h6>Story Point Distribution</h6><div class="chart-box"><canvas id="c1"></canvas></div></div></div>
+ <div class="col-lg-6"><div class="panel"><h6>Risk Distribution</h6><div class="chart-box"><canvas id="c3"></canvas></div></div></div>
+ <div class="col-12"><div class="panel"><h6>Sprint Velocity Trend <span class="text-muted small">(completed points vs. rolling velocity)</span></h6><div class="chart-box"><canvas id="c2"></canvas></div></div></div>
+ <div class="col-lg-6"><div class="panel"><h6>Predicted Sprint Success Probability (%)</h6><div class="chart-box"><canvas id="c4"></canvas></div></div></div>
+ <div class="col-lg-6"><div class="panel"><h6>Team Performance Metrics</h6><div class="chart-box"><canvas id="c5"></canvas></div></div></div>
+</div>{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block title %}Sprint Board{% endblock %}{% block heading %}Sprint Board{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div class="text-muted small">Drag cards between columns to update workflow status.</div>
+  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#storyModal"><i class="bi bi-plus-lg"></i> Create Story</button></div>
+<div class="board" id="board"></div>
+<div class="modal fade" id="storyModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content">
+ <div class="modal-header"><h6 class="modal-title">Create Story</h6><button class="btn-close" data-bs-dismiss="modal"></button></div>
+ <div class="modal-body">
+  <label class="form-label small">Title</label><input id="nsTitle" class="form-control mb-2">
+  <label class="form-label small">Description</label><textarea id="nsDesc" class="form-control mb-2" rows="3"></textarea>
+  <div class="row g-2 mb-2"><div class="col"><label class="form-label small">Priority</label><select id="nsPrio" class="form-select"><option>Highest</option><option>High</option><option selected>Medium</option><option>Low</option></select></div>
+  <div class="col"><label class="form-label small">Issue Type</label><select id="nsType" class="form-select"><option>Task</option><option>Improvement</option><option>Bug</option><option>Documentation</option></select></div>
+  <div class="col"><label class="form-label small">Story Points</label><input id="nsPts" type="number" class="form-control" placeholder="Auto"></div></div>
+  <div id="nsPred" class="small text-muted"></div></div>
+ <div class="modal-footer"><button class="btn btn-outline-secondary btn-sm" id="nsPredict"><i class="bi bi-magic"></i> Estimate Points</button><button class="btn btn-primary btn-sm" id="nsSave">Create</button></div>
+</div></div></div>{% endblock %}

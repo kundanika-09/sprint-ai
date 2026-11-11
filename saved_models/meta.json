@@ -1,0 +1,32 @@
+{
+  "median_points": 3.0,
+  "story_point_metrics": {
+    "train_size": 53,
+    "test_size": 14,
+    "MAE": 1.81,
+    "RMSE": 2.302,
+    "R2": 0.046,
+    "CV_MAE_5fold": 1.485,
+    "baseline_MAE_median": 1.857
+  },
+  "avg_velocity": 28.6,
+  "workload_p75": 11.0,
+  "workload_p90": 15.0,
+  "sprint_success_metrics": {
+    "sprints": 61,
+    "success_rate": 0.574,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0
+  },
+  "risk_metrics": {
+    "accuracy": 0.909,
+    "f1_macro": 0.613,
+    "label_distribution": {
+      "Medium": 91,
+      "Low": 78,
+      "High": 7
+    },
+    "synthetic_augmentation": 2500
+  }
+}

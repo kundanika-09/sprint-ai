@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block title %}Dashboard{% endblock %}{% block heading %}Sprint Dashboard{% endblock %}
+{% block content %}
+<div class="row g-3 mb-3" id="kpis"></div>
+<div class="row g-3">
+  <div class="col-lg-4"><div class="panel"><h6>Risk Distribution</h6><div class="chart-box"><canvas id="riskChart"></canvas></div></div></div>
+  <div class="col-lg-8"><div class="panel"><h6>Story Points by Workflow Stage</h6><div class="chart-box"><canvas id="stageChart"></canvas></div></div></div>
+  <div class="col-12"><div class="panel"><h6>High-Risk Stories <span class="text-muted small">(active sprint)</span></h6>
+    <div class="table-responsive"><table class="table table-sm align-middle mb-0"><thead><tr><th>Key</th><th>Title</th><th>Priority</th><th>Pts</th><th>Blockers</th><th>Stage</th></tr></thead><tbody id="riskTable"></tbody></table></div></div></div>
+</div>{% endblock %}
